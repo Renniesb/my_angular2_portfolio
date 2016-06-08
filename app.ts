@@ -7,7 +7,7 @@ import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
 import {AppComponent} from 'app/my-app';
 
 
-// enableProdMode()
+ enableProdMode()
 
 bootstrap(AppComponent, [
   HTTP_PROVIDERS,

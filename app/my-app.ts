@@ -8,8 +8,8 @@ import { ProjectsComponent }     from './components/projects/projects.component'
 @Component({
   selector: 'my-app',
   providers: [ROUTER_PROVIDERS],
-  pipes: [],
   directives: [ROUTER_DIRECTIVES],
+  moduleId: module.id,
   templateUrl: 'app/my-app.html',
   styleUrls:['app/my-app.css']
 })
