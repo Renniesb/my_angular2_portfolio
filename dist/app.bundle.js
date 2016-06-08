@@ -47,8 +47,8 @@ webpackJsonp([0],{
 	            providers: [router_deprecated_1.ROUTER_PROVIDERS],
 	            pipes: [],
 	            directives: [router_deprecated_1.ROUTER_DIRECTIVES],
-	            templateUrl: 'src/app/my-app.html',
-	            styleUrls: ['src/app/my-app.css']
+	            templateUrl: '/my_angular2_portfolio/app/my-app.html',
+	            styleUrls: ['/my_angular2_portfolio/app/my-app.css']
 	        }),
 	        router_deprecated_1.RouteConfig([
 	            { path: '/projects', component: projects_component_1.ProjectsComponent, name: 'Projects', useAsDefault: true },
