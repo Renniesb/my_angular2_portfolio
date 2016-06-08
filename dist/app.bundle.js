@@ -10,14 +10,14 @@ webpackJsonp([0],{
 	var http_1 = __webpack_require__(280);
 	var router_deprecated_1 = __webpack_require__(301);
 	var my_app_1 = __webpack_require__(333);
-	// enableProdMode()
+	core_1.enableProdMode();
 	platform_browser_dynamic_1.bootstrap(my_app_1.AppComponent, [
 	    http_1.HTTP_PROVIDERS,
 	    router_deprecated_1.ROUTER_PROVIDERS,
 	    core_1.provide(common_1.LocationStrategy, { useClass: common_1.HashLocationStrategy })
 	])
 	    .catch(function (err) { return console.error(err); });
-
+	
 
 /***/ },
 
@@ -45,21 +45,20 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: 'my-app',
 	            providers: [router_deprecated_1.ROUTER_PROVIDERS],
-	            pipes: [],
 	            directives: [router_deprecated_1.ROUTER_DIRECTIVES],
-	            templateUrl: '/my_angular2_portfolio/app/my-app.html',
-	            styleUrls: ['/my_angular2_portfolio/app/my-app.css']
+	            templateUrl: 'app/my-app.html',
+	            style: ["nav a {\n  padding: 5px 10px;\n  text-decoration: none;\n  margin-top: 10px;\n  display: inline-block;\n  background-color: #eee;\n  border-radius: 4px;\n  font-family: 'Audiowide', cursive;\n}\nnav a:visited, a:link {\n  color: #607D8B;\n}\nnav a:hover {\n  color: #039be5;\n  background-color: #CFD8DC;\n}\nnav a.router-link-active {\n  color: #039be5;\n}\n\n.hero {\n  color: #E2E393;\n\n}\n\n.jumbotron h1 {\n  color: #CDF9B2;\n}"]
 	        }),
 	        router_deprecated_1.RouteConfig([
 	            { path: '/projects', component: projects_component_1.ProjectsComponent, name: 'Projects', useAsDefault: true },
 	            { path: '/suggestions', component: suggestions_component_1.SuggestionsView, name: 'Suggestions' },
-	        ]),
+	        ]), 
 	        __metadata('design:paramtypes', [])
 	    ], AppComponent);
 	    return AppComponent;
 	}());
 	exports.AppComponent = AppComponent;
-
+	
 
 /***/ },
 
@@ -98,7 +97,7 @@ webpackJsonp([0],{
 	                class: 'row'
 	            },
 	            template: "\n    <div class=\"\">\n      <div class=\"\">\n        <div class=\"\">\n          {{ suggestion.votes }}\n        </div>\n        <div class=\"\">\n          Points\n        </div>\n      </div>\n    </div>\n    <div class=\"\">\n      <a class=\"\">\n        {{ suggestion.title }}\n      </a>\n      <div class=\"\">{{ suggestion.comment}}</div>\n      <ul class=\"\">\n        <li class=\"\">\n          <a href (click)=\"voteUp()\">\n            <i class=\"\"></i>\n              upvote\n            </a>\n        </li>\n        <li class=\"\">\n          <a href (click)=\"voteDown()\">\n            <i class=\"arrow down icon\"></i>\n            downvote\n          </a>\n        </li>\n      </ul>\n    </div>\n  "
-	        }),
+	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], SuggestionsComponent);
 	    return SuggestionsComponent;
@@ -127,13 +126,13 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            directives: [SuggestionsComponent],
 	            template: "\n    <form class=\"Container\">\n      <h3 class=\"\">Add a Project Suggestion</h3>\n\n      <div class=\"row\">\n        <div class=\"col-md-6\">\n          <label for=\"title\">Suggested Project Title:</label>\n          <input name=\"title\" #newtitle>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div class=\"col-md-6\">\n          <label for=\"comment\">Suggested Project Idea</label>\n          <textarea name=\"comment\" #newcomment style=\"width:100%; height=100px\"></textarea>\n        </div>\n      </div>\n\n      <button (click)=\"addSuggestion(newtitle, newcomment)\"\n              class=\"\">\n        Submit suggestion\n      </button>\n    </form>\n\n    <div class=\"\">\n      <suggestion-posts\n        *ngFor=\"let suggestion of sortedSuggestions()\"\n        [suggestion]=\"suggestion\">\n      </suggestion-posts>\n    </div>\n  ", providers: [suggestion_service_1.SuggestionService]
-	        }),
+	        }), 
 	        __metadata('design:paramtypes', [suggestion_service_1.SuggestionService])
 	    ], SuggestionsView);
 	    return SuggestionsView;
 	}());
 	exports.SuggestionsView = SuggestionsView;
-
+	
 
 /***/ },
 
@@ -156,7 +155,7 @@ webpackJsonp([0],{
 	    return Suggestion;
 	}());
 	exports.Suggestion = Suggestion;
-
+	
 
 /***/ },
 
@@ -182,13 +181,13 @@ webpackJsonp([0],{
 	        return mock_suggestions_1.SUGGESTIONS;
 	    };
 	    SuggestionService = __decorate([
-	        core_1.Injectable(),
+	        core_1.Injectable(), 
 	        __metadata('design:paramtypes', [])
 	    ], SuggestionService);
 	    return SuggestionService;
 	}());
 	exports.SuggestionService = SuggestionService;
-
+	
 
 /***/ },
 
@@ -202,7 +201,7 @@ webpackJsonp([0],{
 	    new suggestion_1.Suggestion('Fullstack', 'http://fullstack.io', 2),
 	    new suggestion_1.Suggestion('Angular Homepage', 'http://angular.io', 1)
 	];
-
+	
 
 /***/ },
 
@@ -272,15 +271,15 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: 'my-app',
 	            host: { class: 'dashboard' },
-	            templateUrl: '/my_angular2_portfolio/app/components/projects/projects.component.html',
+	            templateUrl: 'app/components/projects/projects.component.html',
 	            providers: [project_service_1.ProjectService, tech_service_1.TechService]
-	        }),
+	        }), 
 	        __metadata('design:paramtypes', [project_service_1.ProjectService, tech_service_1.TechService])
 	    ], ProjectsComponent);
 	    return ProjectsComponent;
 	}());
 	exports.ProjectsComponent = ProjectsComponent;
-
+	
 
 /***/ },
 
@@ -306,13 +305,13 @@ webpackJsonp([0],{
 	        return mock_tech_1.MOCKTECH;
 	    };
 	    TechService = __decorate([
-	        core_1.Injectable(),
+	        core_1.Injectable(), 
 	        __metadata('design:paramtypes', [])
 	    ], TechService);
 	    return TechService;
 	}());
 	exports.TechService = TechService;
-
+	
 
 /***/ },
 
@@ -355,7 +354,7 @@ webpackJsonp([0],{
 	        checked: true
 	    }
 	];
-
+	
 
 /***/ },
 
@@ -381,13 +380,13 @@ webpackJsonp([0],{
 	        return mock_projects_1.MOCKPROJECTS;
 	    };
 	    ProjectService = __decorate([
-	        core_1.Injectable(),
+	        core_1.Injectable(), 
 	        __metadata('design:paramtypes', [])
 	    ], ProjectService);
 	    return ProjectService;
 	}());
 	exports.ProjectService = ProjectService;
-
+	
 
 /***/ },
 
@@ -401,7 +400,7 @@ webpackJsonp([0],{
 	    new project_1.Project("Web Design Business Website", ["Wordpress", "Bootstrap", "PHP", "HTML5", "CSS3"], 0),
 	    new project_1.Project("Vocab Immersion Trainer App", ["AngularJS", "Javascript", "Bootstrap", "HTML5", "CSS3"], 0)
 	];
-
+	
 
 /***/ },
 
@@ -421,7 +420,7 @@ webpackJsonp([0],{
 	    return Project;
 	}());
 	exports.Project = Project;
-
+	
 
 /***/ }
 

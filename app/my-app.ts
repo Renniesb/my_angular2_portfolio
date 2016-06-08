@@ -10,7 +10,7 @@ import { ProjectsComponent }     from './components/projects/projects.component'
   providers: [ROUTER_PROVIDERS],
   directives: [ROUTER_DIRECTIVES],
   templateUrl: 'app/my-app.html',
-  style:['nav a {
+  style:[`nav a {
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
@@ -37,7 +37,7 @@ nav a.router-link-active {
 
 .jumbotron h1 {
   color: #CDF9B2;
-}']
+}`]
 })
 @RouteConfig([
   { path: '/projects',       component: ProjectsComponent,        name: 'Projects', useAsDefault: true },
