@@ -1,0 +1,159 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 9, ../sass/print.scss */
+body {
+  background-color: #fafafa;
+  font-size: 16px;
+  min-height: 75rem;
+}
+
+/* line 14, ../sass/print.scss */
+.jumbotron h1 {
+  font-size: 2em;
+  color: #f5f5f5;
+  font-family: 'Audiowide', cursive;
+
+}
+/* line 20, ../sass/print.scss */
+
+/* line 28, ../sass/print.scss */
+h2 {
+  font: 1.5em arial, sans-serif;
+}
+
+/* line 32, ../sass/print.scss */
+p {
+  text-align: center;
+}
+/* line 35, ../sass/print.scss */
+p:hover {
+  color: gray;
+}
+
+/* line 40, ../sass/print.scss */
+
+
+.container:nth-child(n+1) {
+  background: #f1f1f1;
+  border-left: solid;
+  border-top: solid 2.5px;
+  border-color: #cccccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  -webkit-box-shadow: #B3B3B3 10px 10px 10px;
+  -moz-box-shadow: #B3B3B3 10px 10px 10px;
+  box-shadow: #B3B3B3 10px 10px 10px;
+
+}
+
+
+.hero {
+  background-image: url("img/code.jpg");
+  color: white;
+}
+
+.hero p {
+  font-family: 'bangers', cursive;
+}
+
+/* line 46, ../sass/print.scss */
+.card {
+  background: #fff;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 25px;
+  border-color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+/* line 54, ../sass/print.scss */
+.morecontent span {
+  display: none;
+}
+
+/* line 59, ../sass/print.scss */
+.morelink {
+  display: block;
+}
+
+/* line 63, ../sass/print.scss */
+.owl-prev {
+  display: inline;
+  padding-right: 4px;
+}
+
+/* line 68, ../sass/print.scss */
+.owl-next {
+  display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 73, ../sass/print.scss */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /* line 77, ../sass/print.scss */
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+  background-color: hsla(72, 45%, 2%, 0.65);
+}
+
+.jumbotron .container {
+  border: none;
+
+  background: hsla(72, 45%, 2%, 0.65);
+  -webkit-box-shadow: #B3B3B3 10px 10px 10px;
+  -moz-box-shadow: #B3B3B3 10px 10px 10px;
+  box-shadow: #B3B3B3 10px 10px 10px;
+  max-width: 40rem;
+}
+
+.jumbotron p.lead {
+    background-color: hsla(72, 45%, 2%, 0.65);
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+p a {
+  font-family: 'Audiowide', cursive;
+}
