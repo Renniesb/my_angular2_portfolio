@@ -9,7 +9,7 @@ import { ProjectsComponent }     from './components/projects/projects.component'
   selector: 'my-app',
   providers: [ROUTER_PROVIDERS],
   directives: [ROUTER_DIRECTIVES],
-  templateUrl: 'app/my-app.html',
+  templateUrl: '/my_angular2_portfolio/app/my-app.html',
   style:[`nav a {
   padding: 5px 10px;
   text-decoration: none;
