@@ -4,24 +4,17 @@ webpackJsonp([0],{
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var common_1 = __webpack_require__(1);
-	var platform_browser_dynamic_1 = __webpack_require__(160);
-	var core_1 = __webpack_require__(4);
-	var http_1 = __webpack_require__(280);
-	var router_deprecated_1 = __webpack_require__(301);
-	var my_app_1 = __webpack_require__(333);
+	var platform_browser_dynamic_1 = __webpack_require__(1);
+	var core_1 = __webpack_require__(7);
+	var my_app_1 = __webpack_require__(280);
 	core_1.enableProdMode();
-	platform_browser_dynamic_1.bootstrap(my_app_1.AppComponent, [
-	    http_1.HTTP_PROVIDERS,
-	    router_deprecated_1.ROUTER_PROVIDERS,
-	    core_1.provide(common_1.LocationStrategy, { useClass: common_1.HashLocationStrategy })
-	])
+	platform_browser_dynamic_1.bootstrap(my_app_1.AppComponent)
 	    .catch(function (err) { return console.error(err); });
 	
 
 /***/ },
 
-/***/ 333:
+/***/ 280:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34,10 +27,10 @@ webpackJsonp([0],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var router_deprecated_1 = __webpack_require__(301);
-	var suggestions_component_1 = __webpack_require__(334);
-	var projects_component_1 = __webpack_require__(338);
+	var core_1 = __webpack_require__(7);
+	var router_deprecated_1 = __webpack_require__(281);
+	var suggestions_component_1 = __webpack_require__(313);
+	var projects_component_1 = __webpack_require__(317);
 	var AppComponent = (function () {
 	    function AppComponent() {
 	    }
@@ -62,7 +55,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 334:
+/***/ 313:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -75,9 +68,9 @@ webpackJsonp([0],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var suggestion_1 = __webpack_require__(335);
-	var suggestion_service_1 = __webpack_require__(336);
+	var core_1 = __webpack_require__(7);
+	var suggestion_1 = __webpack_require__(314);
+	var suggestion_service_1 = __webpack_require__(315);
 	var SuggestionsComponent = (function () {
 	    function SuggestionsComponent() {
 	    }
@@ -136,7 +129,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 335:
+/***/ 314:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -159,7 +152,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 336:
+/***/ 315:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -172,8 +165,8 @@ webpackJsonp([0],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var mock_suggestions_1 = __webpack_require__(337);
+	var core_1 = __webpack_require__(7);
+	var mock_suggestions_1 = __webpack_require__(316);
 	var SuggestionService = (function () {
 	    function SuggestionService() {
 	    }
@@ -191,11 +184,11 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 337:
+/***/ 316:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var suggestion_1 = __webpack_require__(335);
+	var suggestion_1 = __webpack_require__(314);
 	exports.SUGGESTIONS = [
 	    new suggestion_1.Suggestion('Angular 2', 'http://angular.io', 3),
 	    new suggestion_1.Suggestion('Fullstack', 'http://fullstack.io', 2),
@@ -205,7 +198,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 338:
+/***/ 317:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -218,9 +211,9 @@ webpackJsonp([0],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var tech_service_1 = __webpack_require__(339);
-	var project_service_1 = __webpack_require__(341);
+	var core_1 = __webpack_require__(7);
+	var tech_service_1 = __webpack_require__(318);
+	var project_service_1 = __webpack_require__(320);
 	var ProjectsComponent = (function () {
 	    function ProjectsComponent(projectService, techService) {
 	        this.projectService = projectService;
@@ -284,7 +277,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 339:
+/***/ 318:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -297,8 +290,8 @@ webpackJsonp([0],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var mock_tech_1 = __webpack_require__(340);
+	var core_1 = __webpack_require__(7);
+	var mock_tech_1 = __webpack_require__(319);
 	var TechService = (function () {
 	    function TechService() {
 	    }
@@ -316,7 +309,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 340:
+/***/ 319:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -359,7 +352,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 341:
+/***/ 320:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -372,8 +365,8 @@ webpackJsonp([0],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var mock_projects_1 = __webpack_require__(342);
+	var core_1 = __webpack_require__(7);
+	var mock_projects_1 = __webpack_require__(321);
 	var ProjectService = (function () {
 	    function ProjectService() {
 	    }
@@ -391,11 +384,11 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 342:
+/***/ 321:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var project_1 = __webpack_require__(343);
+	var project_1 = __webpack_require__(322);
 	/* all the projects worked on */
 	exports.MOCKPROJECTS = [
 	    new project_1.Project("Web Design Business Website", ["Wordpress", "Bootstrap", "PHP", "HTML5", "CSS3"], 0),
@@ -405,7 +398,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 343:
+/***/ 322:
 /***/ function(module, exports) {
 
 	"use strict";

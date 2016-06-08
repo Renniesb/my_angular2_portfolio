@@ -1,4 +1,3 @@
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {bootstrap} from '@angular/platform-browser-dynamic';
 import {provide, enableProdMode} from '@angular/core';
 import {HTTP_PROVIDERS} from '@angular/http';
@@ -9,9 +8,5 @@ import {AppComponent} from 'app/my-app';
 
  enableProdMode()
 
-bootstrap(AppComponent, [
-  HTTP_PROVIDERS,
-  ROUTER_PROVIDERS,
-  provide(LocationStrategy, {useClass: HashLocationStrategy})
-])
+bootstrap(AppComponent)
 .catch(err => console.error(err));
