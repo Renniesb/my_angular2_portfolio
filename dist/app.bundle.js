@@ -43,7 +43,7 @@ webpackJsonp([0],{
 	            styles: ["nav a {\n  padding: 5px 10px;\n  text-decoration: none;\n  margin-top: 10px;\n  display: inline-block;\n  background-color: #eee;\n  border-radius: 4px;\n  font-family: 'Audiowide', cursive;\n}\nnav a:visited, a:link {\n  color: #607D8B;\n}\nnav a:hover {\n  color: #039be5;\n  background-color: #CFD8DC;\n}\nnav a.router-link-active {\n  color: #039be5;\n}\n\n.hero {\n  color: #E2E393;\n\n}\n\n.jumbotron h1 {\n  color: #CDF9B2;\n}"]
 	        }),
 	        router_deprecated_1.RouteConfig([
-	            { path: '/projects', component: projects_component_1.ProjectsComponent, name: 'Projects', useAsDefault: true },
+	            { path: '/my_angular2_portfolio/', component: projects_component_1.ProjectsComponent, name: 'Projects', useAsDefault: true },
 	            { path: '/suggestions', component: suggestions_component_1.SuggestionsView, name: 'Suggestions' },
 	        ]), 
 	        __metadata('design:paramtypes', [])

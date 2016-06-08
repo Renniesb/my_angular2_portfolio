@@ -54,7 +54,7 @@ nav a.router-link-active {
 }`]
 })
 @RouteConfig([
-  { path: '/projects',       component: ProjectsComponent,        name: 'Projects', useAsDefault: true },
+  { path: '/my_angular2_portfolio/',       component: ProjectsComponent,        name: 'Projects', useAsDefault: true },
   { path: '/suggestions',      component: SuggestionsView,       name: 'Suggestions' },
 ])
 export class AppComponent {
