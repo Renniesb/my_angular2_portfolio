@@ -46,9 +46,8 @@ webpackJsonp([0],{
 	            selector: 'my-app',
 	            providers: [router_deprecated_1.ROUTER_PROVIDERS],
 	            directives: [router_deprecated_1.ROUTER_DIRECTIVES],
-	            moduleId: module.id,
-	            templateUrl: 'my-app.html',
-	            styleUrls: ['my-app.css']
+	            template: "<section class=\"hero jumbotron text-xs-center\">\n    <div class=\"container\">\n      <h1 class=\"jumbotron-heading\">Featured Work Explorer</h1>\n      <p class=\"lead\">This is web based application for my portfolio. Here you can filter projects by technology used. You can also express that you like a project by using the like button and suggest new projects on the project suggestion page</p>\n      <p>\n        <a [routerLink]=\"['Suggestions']\" class=\"btn btn-primary\">Project Suggestion Page</a>\n        <a href=\"#\" class=\"btn btn-secondary\">Github</a>\n      </p>\n    </div>\n</section>\n<nav>\n  <a [routerLink]=\"['Projects']\">Projects</a>\n  <a [routerLink]=\"['Suggestions']\">Project Suggestions</a>\n</nav>\n<router-outlet></router-outlet>",
+	            styles: ["nav a {\n  padding: 5px 10px;\n  text-decoration: none;\n  margin-top: 10px;\n  display: inline-block;\n  background-color: #eee;\n  border-radius: 4px;\n  font-family: 'Audiowide', cursive;\n}\nnav a:visited, a:link {\n  color: #607D8B;\n}\nnav a:hover {\n  color: #039be5;\n  background-color: #CFD8DC;\n}\nnav a.router-link-active {\n  color: #039be5;\n}\n\n.hero {\n  color: #E2E393;\n\n}\n\n.jumbotron h1 {\n  color: #CDF9B2;\n}"]
 	        }),
 	        router_deprecated_1.RouteConfig([
 	            { path: '/projects', component: projects_component_1.ProjectsComponent, name: 'Projects', useAsDefault: true },
@@ -273,7 +272,7 @@ webpackJsonp([0],{
 	            selector: 'my-app',
 	            moduleId: module.id,
 	            host: { class: 'dashboard' },
-	            templateUrl: 'components/projects/projects.component.html',
+	            template: "  <p>\n    <a class=\"btn btn-large btn-primary\" data-toggle=\"collapse\" href=\"#collapseExample\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n      {{title}}\n    </a>\n  </p>\n<div class=\"collapse\" id=\"collapseExample\">\n  <div class=\"card card-block\">\n     <label class=\"label label-pill label-primary\" *ngFor=\"let item of technologyList\">\n        <input type=\"checkbox\"\n             value=\"{{item.name}}\"\n             [checked]=\"item.checked\"\n             (change)=\"onInteractionEvent($event)\">\n      {{ item.name }}\n      </label>\n  </div>\n</div>\n\n    <h2>Featured Projects</h2>\n  <div *ngFor=\"let project of matchedProjects\" class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-sm-4 col-sm-offset-1 card\">\n        <img src=\"http://placehold.it/350x150\" class=\"card-img-top img-fluid img-rounded center-block\" data-src=\"...\" alt=\"Card image cap\">\n          <div class=\"card-block  text-xs-center\">\n          <h4 class=\"card-title\">Project Name: {{project.name}} </h4>\n          <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content. This is alot of text. It adds length to the paragraph. It adds bulk. I had to do it. It was very necessary for this example</p>\n          <a class=\"btn btn-primary\">See live site</a>\n          </div>\n          <p> {{ project.favs }} Likes <a href (click)=\"favUp(project)\">Like</a></p>\n      </div>\n      <div class=\"col-sm-6 text-xs-center\">\n        <h2 >Technology used</h2>\n        <p>{{project.technologies}}</p>\n      </div>\n    </div>\n  </div>",
 	            providers: [project_service_1.ProjectService, tech_service_1.TechService]
 	        }), 
 	        __metadata('design:paramtypes', [project_service_1.ProjectService, tech_service_1.TechService])
