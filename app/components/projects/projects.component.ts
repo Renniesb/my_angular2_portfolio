@@ -10,8 +10,9 @@ import {ProjectService} from '../../services/project.service';
 
 @Component({
   selector: 'my-app',
+  moduleId: module.id,
   host: {class: 'dashboard'},
-  templateUrl: 'app/components/projects/projects.component.html',
+  templateUrl: 'components/projects/projects.component.html',
   providers: [ProjectService, TechService]
 
 })

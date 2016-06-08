@@ -9,35 +9,9 @@ import { ProjectsComponent }     from './components/projects/projects.component'
   selector: 'my-app',
   providers: [ROUTER_PROVIDERS],
   directives: [ROUTER_DIRECTIVES],
-  templateUrl: '/my_angular2_portfolio/app/my-app.html',
-  style:[`nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
-  font-family: 'Audiowide', cursive;
-}
-nav a:visited, a:link {
-  color: #607D8B;
-}
-nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
-}
-nav a.router-link-active {
-  color: #039be5;
-}
-
-.hero {
-  color: #E2E393;
-
-}
-
-.jumbotron h1 {
-  color: #CDF9B2;
-}`]
+  moduleId: module.id,
+  templateUrl: 'my-app.html',
+  styleUrls:['my-app.css']
 })
 @RouteConfig([
   { path: '/projects',       component: ProjectsComponent,        name: 'Projects', useAsDefault: true },
