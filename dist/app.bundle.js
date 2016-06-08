@@ -272,7 +272,7 @@ webpackJsonp([0],{
 	        core_1.Component({
 	            selector: 'my-app',
 	            host: { class: 'dashboard' },
-	            templateUrl: 'app/components/projects/projects.component.html',
+	            templateUrl: '/my_angular2_portfolio/app/components/projects/projects.component.html',
 	            providers: [project_service_1.ProjectService, tech_service_1.TechService]
 	        }),
 	        __metadata('design:paramtypes', [project_service_1.ProjectService, tech_service_1.TechService])
