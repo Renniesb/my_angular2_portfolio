@@ -8,6 +8,11 @@ body {
   min-height: 75rem;
 }
 
+.center-block{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* line 14, ../sass/print.scss */
 .jumbotron h1 {
   font-size: 2em;
@@ -42,6 +47,7 @@ p:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  padding-left: 40px;
   margin-bottom: 40px;
   padding-bottom: 15px;
   -webkit-box-shadow: #B3B3B3 10px 10px 10px;
@@ -52,7 +58,7 @@ p:hover {
 
 
 .hero {
-  background-image: url("/my_angular2_portfolio/img/code.jpg");
+  background-image: url("../img/code.jpg");
   color: white;
 }
 
@@ -65,7 +71,7 @@ p:hover {
   background: #fff;
   margin-top: 20px;
   padding-top: 20px;
-  padding-left: 0px;
+  padding-left: 20px;
   padding-right: 0px;
   padding-bottom: 25px;
   border-color: #cccccc;
