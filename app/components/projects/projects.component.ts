@@ -32,7 +32,7 @@ import {ProjectService} from '../../services/project.service';
     <h2>Featured Projects</h2>
   <div *ngFor="let project of matchedProjects" class="container">
     <div class="row">
-      <div class="col-sm-4 col-sm-offset-1 card">
+      <div class="col-sm-6 col-md-4 col-sm-offset-1 card">
         <img src="/my_angular2_portfolio/img/{{project.img}}" class="card-img-top img-fluid img-rounded center-block" data-src="..." alt="Card image cap">
           <div class="card-block  text-xs-center">
           <h4 class="card-title">Project Name: {{project.name}} </h4>
