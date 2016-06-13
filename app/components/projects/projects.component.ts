@@ -36,14 +36,18 @@ import {ProjectService} from '../../services/project.service';
         <img src="/img/{{project.img}}" class="card-img-top img-fluid img-rounded center-block" data-src="..." alt="Card image cap">
           <div class="card-block  text-xs-center">
           <h4 class="card-title">Project Name: {{project.name}} </h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. This is alot of text. It adds length to the paragraph. It adds bulk. I had to do it. It was very necessary for this example</p>
-          <a class="btn btn-primary">See live site</a>
+          <p class="card-text">{{project.description}}</p>
+          <a href="{{project.link}}" class="btn btn-primary">See live site</a>
           </div>
           <p> {{ project.favs }} Likes <a href (click)="favUp(project)">Like</a></p>
       </div>
       <div class="col-sm-6 text-xs-center">
         <h2 >Technology used</h2>
         <p>{{project.technologies}}</p>
+        <h2>Project Highlights</h2>
+        <p>{{project.highlights}}</p>
+        <h2>Completion Date</h2>
+        <p>{{project.date}}</p>
       </div>
     </div>
   </div>`,

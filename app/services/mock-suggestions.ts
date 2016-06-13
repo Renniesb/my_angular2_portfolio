@@ -1,6 +1,4 @@
 import { Suggestion } from './suggestion';
 export var SUGGESTIONS: Suggestion[] = [
-      new Suggestion('Angular 2', 'http://angular.io', 3),
-      new Suggestion('Fullstack', 'http://fullstack.io', 2),
-      new Suggestion('Angular Homepage', 'http://angular.io', 1)
+      new Suggestion('Nomadic Translator App', 'This app has you translating for tourists in the most famous cities in Spain and beyond, the user will order a series of words in order to translate properly. There will then be an audio played if sentence is correct', 1),
 ];

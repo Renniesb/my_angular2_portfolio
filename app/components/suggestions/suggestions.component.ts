@@ -12,36 +12,25 @@ import { SuggestionService } from '../../services/suggestion.service';
     class: 'row'
   },
   template: `
-    <div class="">
-      <div class="">
-        <div class="">
-          {{ suggestion.votes }}
-        </div>
-        <div class="">
-          Points
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <a href (click)="voteUp()">
+          <p>Upvote <span class="fa fa-chevron-up"></span></p>
+        </a>
+        <a href (click)="voteDown()">
+            <p>Downvote <span class="fa fa-chevron-down"></span></p>
+        </a>
+        <p>{{ suggestion.votes }} Votes</p>
+      </div>
+      <div class="col-xs-8 text-xs-center">
+        <h4>Project Title</h4>
+        <p>{{ suggestion.title }}</p>
+        <h4> Project Description</h4>
+        <p>{{ suggestion.comment }}</p>
       </div>
     </div>
-    <div class="">
-      <a class="">
-        {{ suggestion.title }}
-      </a>
-      <div class="">{{ suggestion.comment}}</div>
-      <ul class="">
-        <li class="">
-          <a href (click)="voteUp()">
-            <i class=""></i>
-              upvote
-            </a>
-        </li>
-        <li class="">
-          <a href (click)="voteDown()">
-            <i class="arrow down icon"></i>
-            downvote
-          </a>
-        </li>
-      </ul>
-    </div>
+  </div>
   `
 })
 export class SuggestionsComponent {
