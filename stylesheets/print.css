@@ -58,7 +58,7 @@ p:hover {
 
 
 .hero {
-  background-image: url("/my_angular2_portfolio/img/code.jpg");
+  background-image: url("../img/code.jpg");
   color: white;
 }
 
